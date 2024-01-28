@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="column1">
+        <h3>HOME</h3>
+        <p id="score-home">0</p>
+        <div class="btn">
+          <button onclick="addHome(1)">+1</button>
+          <button onclick="addHome(2)">+2</button>
+          <button onclick="addHome(3)">+3</button>
+        </div>
+      </div>
+      <div class="column2">
+        <h3>AWAY</h3>
+        <p id="score-away">0</p>
+        <div class="btn">
+          <button onclick="addAway(1)">+1</button>
+          <button onclick="addAway(2)">+2</button>
+          <button onclick="addAway(3)">+3</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const homeScore = document.getElementById("score-home");
+      const awayScore = document.getElementById("score-away");
+      let totalHome = 0;
+      let totalAway = 0;
+      const addHome = (num) => {
+        totalHome += num;
+        homeScore.textContent = totalHome;
+      };
+      const addAway = (num) => {
+        totalAway += num;
+        awayScore.textContent = totalAway;
+      };
+    </script>
+  </body>
+</html>

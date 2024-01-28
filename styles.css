@@ -1,0 +1,95 @@
+.body {
+  min-width: 1440px;
+  min-height: 846px;
+}
+.wrapper {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 5vh;
+  color: #e12819;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 100vw;
+  width: 100%;
+  max-height: 800px;
+  max-width: 900px;
+  min-height: 800px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-image: url("./hoop.jpg");
+}
+@media screen and (max-height: 480px) {
+  .wrapper {
+    /* height: 100vh;
+    width: 50vw;
+  } */
+    transform: scale(0.5);
+  }
+}
+.column1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20vh;
+  margin-left: 5.2vw;
+  margin-bottom: 55vh;
+}
+.column2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20vh;
+  margin-right: 5.2vw;
+  margin-bottom: 55vh;
+}
+.column1 h3 {
+  font-weight: bolder;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-top: none;
+  margin-bottom: none;
+}
+.column2 h3 {
+  font-weight: bolder;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-top: none;
+  margin-bottom: none;
+}
+.column1 p {
+  font-family: CursedTimerUlil;
+  font-size: 15vh;
+  font-weight: bold;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-top: none;
+  margin-bottom: none;
+}
+.column2 p {
+  font-family: CursedTimerUlil;
+  font-size: 15vh;
+  font-weight: bold;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-top: none;
+  margin-bottom: none;
+}
+button {
+  font-size: 20px;
+  color: #e12819;
+  text-shadow: 0px 0px 0.5px black;
+  border: 2px solid #e12819;
+  border-radius: 10px;
+  height: 5vh;
+  width: 5vh;
+  transition: transform 0.2s;
+}
+button:active {
+  transform: scale(0.95);
+}
+@font-face {
+  font-family: CursedTimerUlil;
+  src: url(./CursedTimerUlil-Aznm.ttf);
+}
